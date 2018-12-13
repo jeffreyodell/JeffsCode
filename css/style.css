@@ -1,0 +1,43 @@
+.gridWrapper {
+    display: grid;
+    grid-template-areas:
+                "left right";
+}
+
+.left {
+    grid-area: left;
+    background-color: aqua;
+    width: 50vw;
+    height: 80vh;
+    text-align: center;
+}
+
+.right {
+    grid-area: right;
+    background-color: bisque;
+    width: 50vw;
+    height: 80vh;
+}
+
+@media(max-width: 400px) {
+    .gridWrapper {
+        display: grid;
+        grid-template-areas:
+                    "left"
+                    "right";
+    }
+
+    .left {
+        grid-area: left;
+        background-color: aqua;
+        width: 100vw;
+        height: 20vh;
+    }
+    
+    .right {
+        grid-area: right;
+        background-color: bisque;
+        width: 100vw;
+        height: 20vh;
+    }
+}
